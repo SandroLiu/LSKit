@@ -1,6 +1,6 @@
 //
 //  UIView+LSFrame.h
-//  LSKitDemo
+//  LSUtilsDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (SAFrame)
+@interface UIView (LSFrame)
 
 /**
  *  x轴坐标

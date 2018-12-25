@@ -1,13 +1,13 @@
 //
 //  LSUtilsMacro.h
-//  LSKitDemo
+//  LSUtilsDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#ifndef SAUtilsMacro_h
-#define SAUtilsMacro_h
+#ifndef LSUtilsMacro_h
+#define LSUtilsMacro_h
 
 //获取屏幕 宽度、高度
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

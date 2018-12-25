@@ -1,14 +1,14 @@
 //
 //  UIView+LSFrame.m
-//  LSKitDemo
+//  LSUtilsDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#import "UIView+SAFrame.h"
+#import "UIView+LSFrame.h"
 
-@implementation UIView (SAFrame)
+@implementation UIView (LSFrame)
 
 /**
  *  x轴坐标值

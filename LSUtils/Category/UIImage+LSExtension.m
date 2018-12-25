@@ -1,17 +1,17 @@
 //
 //  UIImage+LSExtension.m
-//  LSKitDemo
+//  LSUtilsDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#import "UIImage+SAExtension.h"
+#import "UIImage+LSExtension.h"
 
-@implementation UIImage (SAExtension)
+@implementation UIImage (LSExtension)
 
 /** 取消系统渲染*/
-+ (UIImage *)sa_imageWithOriginalRendering:(NSString *)imageName
++ (UIImage *)ls_imageWithOriginalRendering:(NSString *)imageName
 {
     UIImage *image = [UIImage imageNamed:imageName];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -19,7 +19,7 @@
 }
 
 /** 从颜色生成图片*/
-+ (UIImage *)sa_imageFromUIColor:(UIColor *)color
++ (UIImage *)ls_imageFromUIColor:(UIColor *)color
 {
     if (!color) {
         color = [UIColor clearColor];
@@ -36,7 +36,7 @@
 
 #pragma mark - 压缩图片
 /** 缩放图片按照大小*/
-+ (UIImage *)sa_image:(UIImage *)image scaleToSize:(CGSize)size
++ (UIImage *)ls_image:(UIImage *)image scaleToSize:(CGSize)size
 {
     CGImageRef imgRef = image.CGImage;
     CGSize originSize = CGSizeMake(CGImageGetWidth(imgRef), CGImageGetHeight(imgRef)); // 原始大小
@@ -57,37 +57,37 @@
 }
 
 /** 缩放图片按照比例*/
-+ (UIImage *)sa_image:(UIImage *)image scaleWithRatio:(CGFloat)ratio
++ (UIImage *)ls_image:(UIImage *)image scaleWithRatio:(CGFloat)ratio
 {
     CGImageRef imgRef = image.CGImage;
     if (ratio > 1 || ratio <= 0) {
         return image;
     }
     CGSize size = CGSizeMake(CGImageGetWidth(imgRef) * ratio, CGImageGetHeight(imgRef) * ratio); // 缩放后大小
-    return [self sa_image:image scaleToSize:size];
+    return [self ls_image:image scaleToSize:size];
 }
 
 /** 压缩后返回图片*/
-+ (UIImage *)sa_compressImage:(UIImage *)image
++ (UIImage *)ls_compressImage:(UIImage *)image
 {
-    NSData * data = [image sa_compressQualityWithMaxLength:1024*1024*1];
+    NSData * data = [image ls_compressQualityWithMaxLength:1024*1024*1];
     return [UIImage imageWithData:data];
 }
 
 /** 压缩后返回二进制文件*/
-+ (NSData *)sa_compressImageToData:(UIImage *)image
++ (NSData *)ls_compressImageToData:(UIImage *)image
 {
-    return [image sa_compressQualityWithMaxLength:1024*1024*1];
+    return [image ls_compressQualityWithMaxLength:1024*1024*1];
 }
 
 /** 压缩图片返回图片*/
-- (UIImage *)sa_imageCompressQualityWithMaxLength:(NSInteger)maxLength {
-    NSData *data = [self sa_compressQualityWithMaxLength:maxLength];
+- (UIImage *)ls_imageCompressQualityWithMaxLength:(NSInteger)maxLength {
+    NSData *data = [self ls_compressQualityWithMaxLength:maxLength];
     return [UIImage imageWithData:data];
 }
 
 /** 压缩图片返回二进制文件*/
-- (NSData *)sa_compressQualityWithMaxLength:(NSInteger)maxLength {
+- (NSData *)ls_compressQualityWithMaxLength:(NSInteger)maxLength {
     NSLog(@"压缩图片开始");
     CGFloat compression = 1;
     NSData *data = UIImageJPEGRepresentation(self, compression);
@@ -126,7 +126,7 @@
 
 #pragma mark - 添加水印
 /** 给图片添加水印*/
-+ (UIImage *)sa_image:(UIImage *)img addLogo:(UIImage *)logo
++ (UIImage *)ls_image:(UIImage *)img addLogo:(UIImage *)logo
 {
     if (logo == nil ) {
         return img;
@@ -156,7 +156,7 @@
 #pragma mark - 屏幕截图的几种方式
 
 /** 屏幕截图有状态栏*/
-+ (UIImage *)sa_imageWithScreenshot
++ (UIImage *)ls_imageWithScreenshot
 {
     CGSize imageSize = [UIScreen mainScreen].bounds.size;
     UIGraphicsBeginImageContextWithOptions(imageSize, YES, 0);
@@ -175,7 +175,7 @@
 }
 
 /** 屏幕截图没有状态栏*/
-+ (UIImage *)sa_imageWithScreenshotNoStatusBar
++ (UIImage *)ls_imageWithScreenshotNoStatusBar
 {
     CGSize size = [UIScreen mainScreen].bounds.size;
     
@@ -202,7 +202,7 @@
 }
 
 /** 给一个view截图*/
-+ (UIImage *)sa_imageForView:(UIView * _Nonnull )view
++ (UIImage *)ls_imageForView:(UIView * _Nonnull )view
 {
     CGSize size = view.bounds.size;
     
@@ -217,7 +217,7 @@
 }
 
 /** 截取部分图片*/
-- (UIImage *)sa_cutImageWithRect:(CGRect)cutRect
+- (UIImage *)ls_cutImageWithRect:(CGRect)cutRect
 {
     CGImageRef subImageRef = CGImageCreateWithImageInRect(self.CGImage, cutRect);
     UIGraphicsBeginImageContext(cutRect.size);
@@ -234,12 +234,12 @@
 #pragma mark- 圆形图片
 
 /// 不带边框的圆形图片
-+ (instancetype)sa_circleImageNamed:(NSString *)name {
-    return [[self imageNamed:name] sa_circleImage];
++ (instancetype)ls_circleImageNamed:(NSString *)name {
+    return [[self imageNamed:name] ls_circleImage];
 }
 
 /// 不带边框的圆形图片
-- (instancetype)sa_circleImage {
+- (instancetype)ls_circleImage {
     UIImage *image = nil;
     @autoreleasepool {
         // 1.开启图形上下文
@@ -261,12 +261,12 @@
 }
 
 /// 带边框的圆形图片
-+ (instancetype)sa_circleWithEdgeImageNamed:(NSString *)named {
-    return [[self imageNamed:named] sa_circleWithEdge];
++ (instancetype)ls_circleWithEdgeImageNamed:(NSString *)named {
+    return [[self imageNamed:named] ls_circleWithEdge];
 }
 
 /// 带边框的圆形图片
-- (instancetype)sa_circleWithEdge {
+- (instancetype)ls_circleWithEdge {
     // 1. 确定边框宽度
     CGFloat borderW = 1;
     // 2. 开启一个上下文
@@ -288,8 +288,8 @@
     return newImage;
 }
 
-- (UIImage *)sa_scaleToSize:(CGSize)size {
-    UIImage *scaledImage = [UIImage sa_image:self scaleToSize:size];
+- (UIImage *)ls_scaleToSize:(CGSize)size {
+    UIImage *scaledImage = [UIImage ls_image:self scaleToSize:size];
     return scaledImage;
 }
 @end

@@ -1,13 +1,13 @@
 //
 //  LSSingleton.h
-//  LSKitDemo
+//  LSUtilsDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#ifndef SASingleton_h
-#define SASingleton_h
+#ifndef LSSingleton_h
+#define LSSingleton_h
 
 //由于宏定义里有需要替换的内容所以定义一个变量className
 //##用于分割、连接字符串

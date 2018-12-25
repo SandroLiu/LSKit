@@ -1,19 +1,19 @@
 //
 //  NSString+LSExtension.m
-//  LSKitDemo
+//  LSUtilsDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#import "NSString+SAExtension.h"
+#import "NSString+LSExtension.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
-@implementation NSString (SAExtension)
+@implementation NSString (LSExtension)
 
 /** 判断字符串是否为空*/
-+ (BOOL)sa_isEmptyOrNull:(NSString *)string
++ (BOOL)ls_isEmptyOrNull:(NSString *)string
 {
     if (string == nil) {
         return YES;
@@ -33,14 +33,14 @@
     return NO;
 }
 
-- (BOOL)sa_isEmptyOrNull {
-    return [NSString sa_isEmptyOrNull:self];
+- (BOOL)ls_isEmptyOrNull {
+    return [NSString ls_isEmptyOrNull:self];
 }
 
 /** 检查字符串是否是纯数字*/
-+ (BOOL)sa_checkStringIsOnlyDigital:(NSString *)str
++ (BOOL)ls_checkStringIsOnlyDigital:(NSString *)str
 {
-    if ([NSString sa_isEmptyOrNull:str]) {
+    if ([NSString ls_isEmptyOrNull:str]) {
         return NO;
     }
     NSString *string = [str stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
@@ -51,7 +51,7 @@
 }
 
 /** 判断字符串中包含汉字*/
-- (BOOL)sa_checkStringIsContainerChineseCharacter
+- (BOOL)ls_checkStringIsContainerChineseCharacter
 {
     for (int i = 0; i < self.length; i++)
     {
@@ -64,7 +64,7 @@
 }
 
 /** 过滤特殊字符串*/
-- (NSString *)sa_filterSpecialString
+- (NSString *)ls_filterSpecialString
 {
     NSCharacterSet *dontWant = [NSCharacterSet characterSetWithCharactersInString:@"[]{}（#%-*+=_）\\|~(＜＞$%^&*)_+,.;':|/@!? "];
     //stringByTrimmingCharactersInSet只能去掉首尾的特殊字符串
@@ -74,7 +74,7 @@
 #pragma mark- 字符串校验
 
 /** 检查是否为正确手机号码*/
-- (BOOL)sa_checkPhoneNumber {
+- (BOOL)ls_checkPhoneNumber {
     if (self.length != 11)
     {
         return NO;
@@ -90,7 +90,7 @@
 }
 
 /** 检查邮箱地址格式*/
-- (BOOL)sa_checkEmailAddress
+- (BOOL)ls_checkEmailAddress
 {
     NSString *emailRegEx =
     @"(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}"
@@ -110,7 +110,7 @@
 }
 
 /** 判断身份证是否合法*/
-- (BOOL)sa_checkIdentityNumber
+- (BOOL)ls_checkIdentityNumber
 {
     {
         //必须满足以下规则
@@ -125,7 +125,7 @@
         //（3）如果余数为0，校验位应为1，余数为1到10校验位应为字符串“0X98765432”(不包括分号)的第余数位的值（比如余数等于3，校验位应为9）
         //6. 出生年份的前两位必须是19或20
         NSString *number = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        number = number.sa_filterSpecialString;
+        number = number.ls_filterSpecialString;
         // 1.判断位数
         if (number.length != 15 && number.length != 18) {
             return NO;
@@ -136,7 +136,7 @@
             //出生日期加上年的开头
             [mString insertString:@"19" atIndex:6];
             //最后一位加上校验码
-            [mString insertString:[mString sa_getLastIdentifyNumberForIdentifyNumber] atIndex:[mString length]];
+            [mString insertString:[mString ls_getLastIdentifyNumberForIdentifyNumber] atIndex:[mString length]];
             number = mString;
         }
         // 3.开始判断
@@ -156,12 +156,12 @@
             return NO;
         }
         // 4.验证校验码
-        return [[number sa_getLastIdentifyNumberForIdentifyNumber] isEqualToString:[number substringWithRange:NSMakeRange(17, 1)]];
+        return [[number ls_getLastIdentifyNumberForIdentifyNumber] isEqualToString:[number substringWithRange:NSMakeRange(17, 1)]];
     }
 }
 
 /// 判断是否包含表情
-- (BOOL)sa_containEmoji {
+- (BOOL)ls_containEmoji {
     NSUInteger len = [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
     if (len < 3) {// 大于2个字符需要验证Emoji(有些Emoji仅三个字符)
         return NO;
@@ -188,7 +188,7 @@
             v |= bts[i + 2] & 0x3F;
             
             // NSLog(@"%02X%02X", (Byte)(v >> 8), (Byte)(v & 0xFF));
-            if ([self sa_emojiInSoftBankUnicode:v] || [self sa_emojiInUnicode:v]) {
+            if ([self ls_emojiInSoftBankUnicode:v] || [self ls_emojiInUnicode:v]) {
                 return YES;
             }
             
@@ -204,7 +204,7 @@
 }
 
 /// 判断是不是表情符号
-- (BOOL)sa_emojiInUnicode:(short)code
+- (BOOL)ls_emojiInUnicode:(short)code
 {
     if (code == 0x0023
         || code == 0x002A
@@ -303,17 +303,17 @@
 }
 
 /// 判断包不包含表情
-- (BOOL)sa_emojiInSoftBankUnicode:(short)code
+- (BOOL)ls_emojiInSoftBankUnicode:(short)code
 {
     return ((code >> 8) >= 0xE0 && (code >> 8) <= 0xE5 && (Byte)(code & 0xFF) < 0x60);
 }
 
 #pragma mark- 根据身份证号获取相关信息
 /** 从身份证里面获取性别man 或者 woman 不正确的身份证返回nil*/
-- (NSString *)sa_getGenderFromIdentityNumber
+- (NSString *)ls_getGenderFromIdentityNumber
 {
-    if (self.sa_checkIdentityNumber) {
-        NSString *number = self.sa_filterSpecialString;
+    if (self.ls_checkIdentityNumber) {
+        NSString *number = self.ls_filterSpecialString;
         NSInteger i = [[number substringWithRange:NSMakeRange(number.length - 2, 1)] integerValue];
         if (i % 2 == 1) {
             return @"man";
@@ -326,10 +326,10 @@
 }
 
 /** 从身份证获取生日,身份证格式不正确返回nil,正确返回:1990年01月01日*/
-- (NSString *)sa_getBirthdayFromIdentityNumber
+- (NSString *)ls_getBirthdayFromIdentityNumber
 {
-    if (self.sa_checkIdentityNumber) {
-        NSString *number = self.sa_filterSpecialString;
+    if (self.ls_checkIdentityNumber) {
+        NSString *number = self.ls_filterSpecialString;
         if (number.length == 18) {
             return [NSString stringWithFormat:@"%@年%@月%@日",[number substringWithRange:NSMakeRange(6,4)], [number substringWithRange:NSMakeRange(10,2)], [number substringWithRange:NSMakeRange(12,2)]];
         }
@@ -344,7 +344,7 @@
 
 #pragma mark- 计算字符串尺寸
 /** 计算字符串尺寸*/
-+ (CGSize)sa_sizeWithString:(NSString *)string font:(UIFont *)font size:(CGSize)size
++ (CGSize)ls_sizeWithString:(NSString *)string font:(UIFont *)font size:(CGSize)size
 {
     NSDictionary *dic = @{NSFontAttributeName:font};
     return [string boundingRectWithSize:size options:(NSStringDrawingUsesLineFragmentOrigin) attributes:dic context:nil].size;
@@ -352,7 +352,7 @@
 
 #pragma mark- 进制转字符串
 
-+ (NSString *)sa_hexStringFromData:(NSData *)data
++ (NSString *)ls_hexStringFromData:(NSData *)data
 {
     Byte *bytes = (Byte *)[data bytes];
     //下面是Byte 转换为16进制。
@@ -369,7 +369,7 @@
 
 #pragma mark- 富文本处理
 /** 添加中划线*/
-- (NSMutableAttributedString *)sa_addCenterLine
+- (NSMutableAttributedString *)ls_addCenterLine
 {
     
     NSDictionary *attribtDic = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
@@ -378,7 +378,7 @@
 }
 
 /** 添加下划线*/
-- (NSMutableAttributedString *)sa_addDownLine
+- (NSMutableAttributedString *)ls_addDownLine
 {
     
     NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
@@ -387,7 +387,7 @@
 }
 
 #pragma mark- 加密处理
-- (NSString *)sa_md5
+- (NSString *)ls_md5
 {
     const char *cStr = [self UTF8String];
     unsigned char digest[CC_MD5_DIGEST_LENGTH];//字符串数组
@@ -403,7 +403,7 @@
 
 #pragma mark- hex string to byte
 
-- (NSData *)sa_hexToData {
+- (NSData *)ls_hexToData {
     if (self.length == 0 || self.length % 2 != 0) {
         return nil;
     }
@@ -439,7 +439,7 @@
 }
 
 /// 复制到粘贴板
-- (void)sa_copyToPasteBoard {
+- (void)ls_copyToPasteBoard {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = self;
 }
@@ -447,7 +447,7 @@
 #pragma mark- Private
 
 /** 验证身份证校验码*/
-- (NSString *)sa_getLastIdentifyNumberForIdentifyNumber {
+- (NSString *)ls_getLastIdentifyNumberForIdentifyNumber {
     //位数不小于17
     if (self.length < 17) {
         return nil;

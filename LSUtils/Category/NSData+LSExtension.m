@@ -1,17 +1,17 @@
 //
 //  NSData+LSExtension.m
-//  LSKitDemo
+//  LSUtilsDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#import "NSData+SAExtension.h"
+#import "NSData+LSExtension.h"
 
-@implementation NSData (SAExtension)
+@implementation NSData (LSExtension)
 
 /// 提取字节值放到字符串内
-- (NSString *)sa_toHexString {
+- (NSString *)ls_toHexString {
     static const char hexdigits[] = "0123456789ABCDEF";
     const size_t numBytes = self.length;
     const unsigned char* bytes = self.bytes;

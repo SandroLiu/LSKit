@@ -1,6 +1,6 @@
 //
 //  UITextField+LSExtension.h
-//  LSKitDemo
+//  LSUtilsDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
@@ -10,10 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITextField (SAExtension)
+@interface UITextField (LSExtension)
 
-@property UIColor *sa_placeholderColor;
-@property UIFont *sa_placeholderFont;
+@property UIColor *ls_placeholderColor;
+@property UIFont *ls_placeholderFont;
 @end
 
 NS_ASSUME_NONNULL_END
