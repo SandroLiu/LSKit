@@ -6,8 +6,8 @@
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#ifndef LSUtilsMacro_h
-#define LSUtilsMacro_h
+#ifndef SAUtilsMacro_h
+#define SAUtilsMacro_h
 
 //获取屏幕 宽度、高度
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

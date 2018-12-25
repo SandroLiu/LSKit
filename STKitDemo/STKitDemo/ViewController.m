@@ -1,14 +1,13 @@
 //
 //  ViewController.m
-//  LSKitDemo
+//  STKitDemo
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "LSKit.h"
-
+#import "SAKit.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%f", SCREEN_WIDTH);
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 

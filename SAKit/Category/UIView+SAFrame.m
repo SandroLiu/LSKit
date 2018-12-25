@@ -6,9 +6,9 @@
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#import "UIView+LSFrame.h"
+#import "UIView+SAFrame.h"
 
-@implementation UIView (LSFrame)
+@implementation UIView (SAFrame)
 
 /**
  *  x轴坐标值

@@ -10,10 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITextField (LSExtension)
+@interface UITextField (SAExtension)
 
-@property UIColor *ls_placeholderColor;
-@property UIFont *ls_placeholderFont;
+@property UIColor *sa_placeholderColor;
+@property UIFont *sa_placeholderFont;
 @end
 
 NS_ASSUME_NONNULL_END

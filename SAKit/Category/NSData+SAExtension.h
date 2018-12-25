@@ -10,14 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSData (LSExtension)
+@interface NSData (SAExtension)
 
 /**
  提取字节值放到字符串内
  
  @return 保存十六进制值的字符串
  */
-- (NSString *)ls_toHexString;
+- (NSString *)sa_toHexString;
 @end
 
 NS_ASSUME_NONNULL_END

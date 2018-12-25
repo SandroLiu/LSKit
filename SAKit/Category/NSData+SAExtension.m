@@ -6,12 +6,12 @@
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#import "NSData+LSExtension.h"
+#import "NSData+SAExtension.h"
 
-@implementation NSData (LSExtension)
+@implementation NSData (SAExtension)
 
 /// 提取字节值放到字符串内
-- (NSString *)ls_toHexString {
+- (NSString *)sa_toHexString {
     static const char hexdigits[] = "0123456789ABCDEF";
     const size_t numBytes = self.length;
     const unsigned char* bytes = self.bytes;

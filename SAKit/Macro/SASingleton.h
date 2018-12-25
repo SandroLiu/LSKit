@@ -6,8 +6,8 @@
 //  Copyright © 2018年 刘帅. All rights reserved.
 //
 
-#ifndef LSSingleton_h
-#define LSSingleton_h
+#ifndef SASingleton_h
+#define SASingleton_h
 
 //由于宏定义里有需要替换的内容所以定义一个变量className
 //##用于分割、连接字符串

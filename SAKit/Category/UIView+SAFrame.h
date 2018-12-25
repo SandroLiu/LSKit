@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (LSFrame)
+@interface UIView (SAFrame)
 
 /**
  *  x轴坐标

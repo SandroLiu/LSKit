@@ -1,6 +1,6 @@
 //
-//  LSKitDemoTests.m
-//  LSKitDemoTests
+//  STKitDemoTests.m
+//  STKitDemoTests
 //
 //  Created by 刘帅 on 2018/12/25.
 //  Copyright © 2018年 刘帅. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface LSKitDemoTests : XCTestCase
+@interface STKitDemoTests : XCTestCase
 
 @end
 
-@implementation LSKitDemoTests
+@implementation STKitDemoTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
