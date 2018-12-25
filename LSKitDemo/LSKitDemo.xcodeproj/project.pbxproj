@@ -15,6 +15,11 @@
 		4B8ADAF921D213B300E40F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADAF821D213B300E40F46 /* main.m */; };
 		4B8ADB0321D213B300E40F46 /* LSKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADB0221D213B300E40F46 /* LSKitDemoTests.m */; };
 		4B8ADB1121D2147000E40F46 /* NSData+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADB1021D2147000E40F46 /* NSData+LSExtension.m */; };
+		4B8ADB1721D2174800E40F46 /* UIView+LSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADB1621D2174800E40F46 /* UIView+LSFrame.m */; };
+		4B8ADB1B21D2184E00E40F46 /* NSString+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADB1A21D2184E00E40F46 /* NSString+LSExtension.m */; };
+		4B8ADB1E21D21B6400E40F46 /* UIImage+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADB1D21D21B6400E40F46 /* UIImage+LSExtension.m */; };
+		4B8ADB2121D21C3C00E40F46 /* NSDate+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADB2021D21C3C00E40F46 /* NSDate+LSExtension.m */; };
+		4B8ADB2421D21D5900E40F46 /* UITextField+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADB2321D21D5900E40F46 /* UITextField+LSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,17 @@
 		4B8ADB1021D2147000E40F46 /* NSData+LSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+LSExtension.m"; sourceTree = "<group>"; };
 		4B8ADB1321D2157600E40F46 /* LSSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSSingleton.h; sourceTree = "<group>"; };
 		4B8ADB1421D2159B00E40F46 /* LSUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSUtilsMacro.h; sourceTree = "<group>"; };
+		4B8ADB1521D2174800E40F46 /* UIView+LSFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LSFrame.h"; sourceTree = "<group>"; };
+		4B8ADB1621D2174800E40F46 /* UIView+LSFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSFrame.m"; sourceTree = "<group>"; };
+		4B8ADB1821D2178300E40F46 /* LSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSKit.h; sourceTree = "<group>"; };
+		4B8ADB1921D2184E00E40F46 /* NSString+LSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LSExtension.h"; sourceTree = "<group>"; };
+		4B8ADB1A21D2184E00E40F46 /* NSString+LSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSExtension.m"; sourceTree = "<group>"; };
+		4B8ADB1C21D21B6400E40F46 /* UIImage+LSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LSExtension.h"; sourceTree = "<group>"; };
+		4B8ADB1D21D21B6400E40F46 /* UIImage+LSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LSExtension.m"; sourceTree = "<group>"; };
+		4B8ADB1F21D21C3C00E40F46 /* NSDate+LSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+LSExtension.h"; sourceTree = "<group>"; };
+		4B8ADB2021D21C3C00E40F46 /* NSDate+LSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LSExtension.m"; sourceTree = "<group>"; };
+		4B8ADB2221D21D5900E40F46 /* UITextField+LSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+LSExtension.h"; sourceTree = "<group>"; };
+		4B8ADB2321D21D5900E40F46 /* UITextField+LSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LSExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +140,17 @@
 			children = (
 				4B8ADB0F21D2147000E40F46 /* NSData+LSExtension.h */,
 				4B8ADB1021D2147000E40F46 /* NSData+LSExtension.m */,
+				4B8ADB1521D2174800E40F46 /* UIView+LSFrame.h */,
+				4B8ADB1621D2174800E40F46 /* UIView+LSFrame.m */,
+				4B8ADB1921D2184E00E40F46 /* NSString+LSExtension.h */,
+				4B8ADB1A21D2184E00E40F46 /* NSString+LSExtension.m */,
+				4B8ADB1C21D21B6400E40F46 /* UIImage+LSExtension.h */,
+				4B8ADB1D21D21B6400E40F46 /* UIImage+LSExtension.m */,
+				4B8ADB1F21D21C3C00E40F46 /* NSDate+LSExtension.h */,
+				4B8ADB2021D21C3C00E40F46 /* NSDate+LSExtension.m */,
+				4B8ADB2221D21D5900E40F46 /* UITextField+LSExtension.h */,
+				4B8ADB2321D21D5900E40F46 /* UITextField+LSExtension.m */,
+				4B8ADB1821D2178300E40F46 /* LSKit.h */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -181,6 +208,7 @@
 		4B8ADADE21D213B200E40F46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LS;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "刘帅";
 				TargetAttributes = {
@@ -237,9 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8ADB1B21D2184E00E40F46 /* NSString+LSExtension.m in Sources */,
+				4B8ADB2421D21D5900E40F46 /* UITextField+LSExtension.m in Sources */,
+				4B8ADB1721D2174800E40F46 /* UIView+LSFrame.m in Sources */,
 				4B8ADAEE21D213B200E40F46 /* ViewController.m in Sources */,
 				4B8ADB1121D2147000E40F46 /* NSData+LSExtension.m in Sources */,
 				4B8ADAF921D213B300E40F46 /* main.m in Sources */,
+				4B8ADB2121D21C3C00E40F46 /* NSDate+LSExtension.m in Sources */,
+				4B8ADB1E21D21B6400E40F46 /* UIImage+LSExtension.m in Sources */,
 				4B8ADAEB21D213B200E40F46 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
