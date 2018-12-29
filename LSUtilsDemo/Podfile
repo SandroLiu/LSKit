@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+
+target 'LSUtilsDemo' do
+	
+	pod 'LSUtils', :path => '../'
+  target 'LSUtilsDemoTests' do
+    inherit! :search_paths
+  end
+
+end

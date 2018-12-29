@@ -1,0 +1,23 @@
+PODS:
+  - LSUtils (0.0.3):
+    - SVProgressHUD (~> 2.2.5)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - LSUtils (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  LSUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LSUtils: 1e97bd90d7c30553ba7a744277997e4bf1873e94
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 63e754363b18cfc7449f098b3233042345a27d7d
+
+COCOAPODS: 1.5.3

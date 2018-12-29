@@ -17,5 +17,5 @@
 #import "UITextField+LSExtension.h"
 #import "LSSingleton.h"
 #import "LSUtilsMacro.h"
-
+#import "LSHUDManager.h"
 #endif /* LSKit_h */

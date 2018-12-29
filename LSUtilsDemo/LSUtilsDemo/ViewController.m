@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <LSUtils/LSUtils.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [LSHUDManager showSVHUDMessage:@"1234"];
 }
 
 

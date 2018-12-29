@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B39EB45E3D6B7799ACADE6E /* libPods-LSUtilsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EA4DD1D00AE6DB352DA4FD /* libPods-LSUtilsDemo.a */; };
+		341599B36E16FB065059AC6A /* libPods-LSUtilsDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FEC573B073965BBBC51F30 /* libPods-LSUtilsDemoTests.a */; };
 		4B8ADBAB21D2798500E40F46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBAA21D2798500E40F46 /* AppDelegate.m */; };
 		4B8ADBAE21D2798500E40F46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBAD21D2798500E40F46 /* ViewController.m */; };
 		4B8ADBB121D2798500E40F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8ADBAF21D2798500E40F46 /* Main.storyboard */; };
@@ -14,12 +16,6 @@
 		4B8ADBB621D2798700E40F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8ADBB421D2798700E40F46 /* LaunchScreen.storyboard */; };
 		4B8ADBB921D2798700E40F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBB821D2798700E40F46 /* main.m */; };
 		4B8ADBC321D2798700E40F46 /* LSUtilsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBC221D2798700E40F46 /* LSUtilsDemoTests.m */; };
-		4B8ADBDF21D2799700E40F46 /* NSDate+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBD021D2799600E40F46 /* NSDate+LSExtension.m */; };
-		4B8ADBE021D2799700E40F46 /* NSData+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBD121D2799600E40F46 /* NSData+LSExtension.m */; };
-		4B8ADBE121D2799700E40F46 /* UIImage+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBD321D2799600E40F46 /* UIImage+LSExtension.m */; };
-		4B8ADBE221D2799700E40F46 /* UITextField+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBD521D2799600E40F46 /* UITextField+LSExtension.m */; };
-		4B8ADBE321D2799700E40F46 /* UIView+LSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBD621D2799600E40F46 /* UIView+LSFrame.m */; };
-		4B8ADBE421D2799700E40F46 /* NSString+LSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBDA21D2799600E40F46 /* NSString+LSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,21 +42,12 @@
 		4B8ADBBE21D2798700E40F46 /* LSUtilsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSUtilsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8ADBC221D2798700E40F46 /* LSUtilsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSUtilsDemoTests.m; sourceTree = "<group>"; };
 		4B8ADBC421D2798700E40F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B8ADBCF21D2799600E40F46 /* UITextField+LSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LSExtension.h"; sourceTree = "<group>"; };
-		4B8ADBD021D2799600E40F46 /* NSDate+LSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LSExtension.m"; sourceTree = "<group>"; };
-		4B8ADBD121D2799600E40F46 /* NSData+LSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LSExtension.m"; sourceTree = "<group>"; };
-		4B8ADBD221D2799600E40F46 /* UIView+LSFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LSFrame.h"; sourceTree = "<group>"; };
-		4B8ADBD321D2799600E40F46 /* UIImage+LSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LSExtension.m"; sourceTree = "<group>"; };
-		4B8ADBD421D2799600E40F46 /* NSString+LSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LSExtension.h"; sourceTree = "<group>"; };
-		4B8ADBD521D2799600E40F46 /* UITextField+LSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LSExtension.m"; sourceTree = "<group>"; };
-		4B8ADBD621D2799600E40F46 /* UIView+LSFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSFrame.m"; sourceTree = "<group>"; };
-		4B8ADBD721D2799600E40F46 /* UIImage+LSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LSExtension.h"; sourceTree = "<group>"; };
-		4B8ADBD821D2799600E40F46 /* NSData+LSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LSExtension.h"; sourceTree = "<group>"; };
-		4B8ADBD921D2799600E40F46 /* NSDate+LSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LSExtension.h"; sourceTree = "<group>"; };
-		4B8ADBDA21D2799600E40F46 /* NSString+LSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSExtension.m"; sourceTree = "<group>"; };
-		4B8ADBDB21D2799600E40F46 /* LSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUtils.h; sourceTree = "<group>"; };
-		4B8ADBDD21D2799600E40F46 /* LSSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSingleton.h; sourceTree = "<group>"; };
-		4B8ADBDE21D2799600E40F46 /* LSUtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUtilsMacro.h; sourceTree = "<group>"; };
+		52DD2F57F93EDA863E154FC4 /* Pods-LSUtilsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSUtilsDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSUtilsDemoTests/Pods-LSUtilsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86EA4DD1D00AE6DB352DA4FD /* libPods-LSUtilsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSUtilsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FEC573B073965BBBC51F30 /* libPods-LSUtilsDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSUtilsDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3245CE6AB4568EE2B576567 /* Pods-LSUtilsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSUtilsDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSUtilsDemoTests/Pods-LSUtilsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		D4575900A18DC7E7E7859D04 /* Pods-LSUtilsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSUtilsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSUtilsDemo/Pods-LSUtilsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E05F32B0008249FA0F8FFE48 /* Pods-LSUtilsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSUtilsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSUtilsDemo/Pods-LSUtilsDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B39EB45E3D6B7799ACADE6E /* libPods-LSUtilsDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341599B36E16FB065059AC6A /* libPods-LSUtilsDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +73,11 @@
 		4B8ADB9D21D2798500E40F46 = {
 			isa = PBXGroup;
 			children = (
-				4B8ADBCD21D2799600E40F46 /* LSUtils */,
 				4B8ADBA821D2798500E40F46 /* LSUtilsDemo */,
 				4B8ADBC121D2798700E40F46 /* LSUtilsDemoTests */,
 				4B8ADBA721D2798500E40F46 /* Products */,
+				B57B2AE513C83FB20576E78B /* Pods */,
+				614BF8A67575DCDC5519A082 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,43 +115,24 @@
 			path = LSUtilsDemoTests;
 			sourceTree = "<group>";
 		};
-		4B8ADBCD21D2799600E40F46 /* LSUtils */ = {
+		614BF8A67575DCDC5519A082 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B8ADBCE21D2799600E40F46 /* Category */,
-				4B8ADBDB21D2799600E40F46 /* LSUtils.h */,
-				4B8ADBDC21D2799600E40F46 /* Macro */,
+				86EA4DD1D00AE6DB352DA4FD /* libPods-LSUtilsDemo.a */,
+				A0FEC573B073965BBBC51F30 /* libPods-LSUtilsDemoTests.a */,
 			);
-			name = LSUtils;
-			path = ../LSUtils;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4B8ADBCE21D2799600E40F46 /* Category */ = {
+		B57B2AE513C83FB20576E78B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4B8ADBD221D2799600E40F46 /* UIView+LSFrame.h */,
-				4B8ADBD621D2799600E40F46 /* UIView+LSFrame.m */,
-				4B8ADBD821D2799600E40F46 /* NSData+LSExtension.h */,
-				4B8ADBD121D2799600E40F46 /* NSData+LSExtension.m */,
-				4B8ADBCF21D2799600E40F46 /* UITextField+LSExtension.h */,
-				4B8ADBD521D2799600E40F46 /* UITextField+LSExtension.m */,
-				4B8ADBD921D2799600E40F46 /* NSDate+LSExtension.h */,
-				4B8ADBD021D2799600E40F46 /* NSDate+LSExtension.m */,
-				4B8ADBD721D2799600E40F46 /* UIImage+LSExtension.h */,
-				4B8ADBD321D2799600E40F46 /* UIImage+LSExtension.m */,
-				4B8ADBD421D2799600E40F46 /* NSString+LSExtension.h */,
-				4B8ADBDA21D2799600E40F46 /* NSString+LSExtension.m */,
+				D4575900A18DC7E7E7859D04 /* Pods-LSUtilsDemo.debug.xcconfig */,
+				E05F32B0008249FA0F8FFE48 /* Pods-LSUtilsDemo.release.xcconfig */,
+				52DD2F57F93EDA863E154FC4 /* Pods-LSUtilsDemoTests.debug.xcconfig */,
+				C3245CE6AB4568EE2B576567 /* Pods-LSUtilsDemoTests.release.xcconfig */,
 			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		4B8ADBDC21D2799600E40F46 /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				4B8ADBDD21D2799600E40F46 /* LSSingleton.h */,
-				4B8ADBDE21D2799600E40F46 /* LSUtilsMacro.h */,
-			);
-			path = Macro;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B8ADBC721D2798700E40F46 /* Build configuration list for PBXNativeTarget "LSUtilsDemo" */;
 			buildPhases = (
+				8FFA4184FE2D12319914CF0F /* [CP] Check Pods Manifest.lock */,
 				4B8ADBA221D2798500E40F46 /* Sources */,
 				4B8ADBA321D2798500E40F46 /* Frameworks */,
 				4B8ADBA421D2798500E40F46 /* Resources */,
+				5EADCBAEF29676D2728F31D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B8ADBCA21D2798700E40F46 /* Build configuration list for PBXNativeTarget "LSUtilsDemoTests" */;
 			buildPhases = (
+				346E2AF6D14FBFFB19930373 /* [CP] Check Pods Manifest.lock */,
 				4B8ADBBA21D2798700E40F46 /* Sources */,
 				4B8ADBBB21D2798700E40F46 /* Frameworks */,
 				4B8ADBBC21D2798700E40F46 /* Resources */,
@@ -259,19 +233,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		346E2AF6D14FBFFB19930373 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSUtilsDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EADCBAEF29676D2728F31D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LSUtilsDemo/Pods-LSUtilsDemo-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSUtilsDemo/Pods-LSUtilsDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FFA4184FE2D12319914CF0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSUtilsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B8ADBA221D2798500E40F46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4B8ADBAE21D2798500E40F46 /* ViewController.m in Sources */,
-				4B8ADBE021D2799700E40F46 /* NSData+LSExtension.m in Sources */,
 				4B8ADBB921D2798700E40F46 /* main.m in Sources */,
-				4B8ADBE121D2799700E40F46 /* UIImage+LSExtension.m in Sources */,
-				4B8ADBE221D2799700E40F46 /* UITextField+LSExtension.m in Sources */,
-				4B8ADBDF21D2799700E40F46 /* NSDate+LSExtension.m in Sources */,
-				4B8ADBE321D2799700E40F46 /* UIView+LSFrame.m in Sources */,
-				4B8ADBE421D2799700E40F46 /* NSString+LSExtension.m in Sources */,
 				4B8ADBAB21D2798500E40F46 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +453,7 @@
 		};
 		4B8ADBC821D2798700E40F46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4575900A18DC7E7E7859D04 /* Pods-LSUtilsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,6 +470,7 @@
 		};
 		4B8ADBC921D2798700E40F46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05F32B0008249FA0F8FFE48 /* Pods-LSUtilsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,6 +487,7 @@
 		};
 		4B8ADBCB21D2798700E40F46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52DD2F57F93EDA863E154FC4 /* Pods-LSUtilsDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +506,7 @@
 		};
 		4B8ADBCC21D2798700E40F46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3245CE6AB4568EE2B576567 /* Pods-LSUtilsDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
