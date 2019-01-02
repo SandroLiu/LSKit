@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B39EB45E3D6B7799ACADE6E /* libPods-LSUtilsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EA4DD1D00AE6DB352DA4FD /* libPods-LSUtilsDemo.a */; };
 		341599B36E16FB065059AC6A /* libPods-LSUtilsDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FEC573B073965BBBC51F30 /* libPods-LSUtilsDemoTests.a */; };
+		4B6DA60F21DCC14E006D1F26 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6DA60E21DCC14E006D1F26 /* TextViewController.m */; };
 		4B8ADBAB21D2798500E40F46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBAA21D2798500E40F46 /* AppDelegate.m */; };
 		4B8ADBAE21D2798500E40F46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ADBAD21D2798500E40F46 /* ViewController.m */; };
 		4B8ADBB121D2798500E40F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8ADBAF21D2798500E40F46 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B6DA60D21DCC14E006D1F26 /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		4B6DA60E21DCC14E006D1F26 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		4B8ADBA621D2798500E40F46 /* LSUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8ADBA921D2798500E40F46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B8ADBAA21D2798500E40F46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				4B8ADBAA21D2798500E40F46 /* AppDelegate.m */,
 				4B8ADBAC21D2798500E40F46 /* ViewController.h */,
 				4B8ADBAD21D2798500E40F46 /* ViewController.m */,
+				4B6DA60D21DCC14E006D1F26 /* TextViewController.h */,
+				4B6DA60E21DCC14E006D1F26 /* TextViewController.m */,
 				4B8ADBAF21D2798500E40F46 /* Main.storyboard */,
 				4B8ADBB221D2798700E40F46 /* Assets.xcassets */,
 				4B8ADBB421D2798700E40F46 /* LaunchScreen.storyboard */,
@@ -298,6 +303,7 @@
 				4B8ADBAE21D2798500E40F46 /* ViewController.m in Sources */,
 				4B8ADBB921D2798700E40F46 /* main.m in Sources */,
 				4B8ADBAB21D2798500E40F46 /* AppDelegate.m in Sources */,
+				4B6DA60F21DCC14E006D1F26 /* TextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

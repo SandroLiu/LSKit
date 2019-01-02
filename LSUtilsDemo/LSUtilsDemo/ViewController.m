@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <LSUtils/LSUtils.h>
-
+#import "TextViewController.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [LSHUDManager showSVHUDMessage:@"1234"];
+    [[NSData data] ls_toHexString];
+    
 }
 
 

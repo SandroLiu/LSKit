@@ -1,5 +1,5 @@
 PODS:
-  - LSUtils (0.0.3):
+  - LSUtils (0.0.4):
     - SVProgressHUD (~> 2.2.5)
   - SVProgressHUD (2.2.5)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LSUtils: 1e97bd90d7c30553ba7a744277997e4bf1873e94
+  LSUtils: be2b1c198bd030fdb4812cd2c602948f6db4a514
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
 PODFILE CHECKSUM: 63e754363b18cfc7449f098b3233042345a27d7d

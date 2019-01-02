@@ -18,4 +18,5 @@
 #import "LSSingleton.h"
 #import "LSUtilsMacro.h"
 #import "LSHUDManager.h"
+#import "LSDeprecatedMacro.h"
 #endif /* LSKit_h */
