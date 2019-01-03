@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface LSHUDManager : NSObject
 
 /**
@@ -69,5 +67,3 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)dissmissSVHUDAfterTime:(NSTimeInterval)time completion:(void(^)(void))completion;
 @end
-
-NS_ASSUME_NONNULL_END
