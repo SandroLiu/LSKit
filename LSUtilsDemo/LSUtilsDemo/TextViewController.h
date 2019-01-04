@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-DEPRECATED_MSG_ATTRIBUTE("该类废弃")
+LS_CLASS_DEPRECATED_IOS("废弃的类")
 @interface TextViewController : UIViewController
 
 @end

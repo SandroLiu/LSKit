@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		4B6DA60D21DCC14E006D1F26 /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		4B6DA60E21DCC14E006D1F26 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		4B6DA62321DF37F2006D1F26 /* LSUtilsDemo-PCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSUtilsDemo-PCH.pch"; sourceTree = "<group>"; };
 		4B8ADBA621D2798500E40F46 /* LSUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8ADBA921D2798500E40F46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B8ADBAA21D2798500E40F46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 				4B8ADBB421D2798700E40F46 /* LaunchScreen.storyboard */,
 				4B8ADBB721D2798700E40F46 /* Info.plist */,
 				4B8ADBB821D2798700E40F46 /* main.m */,
+				4B6DA62321DF37F2006D1F26 /* LSUtilsDemo-PCH.pch */,
 			);
 			path = LSUtilsDemo;
 			sourceTree = "<group>";
@@ -463,6 +465,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LSUtilsDemo/LSUtilsDemo-PCH.pch";
 				INFOPLIST_FILE = LSUtilsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,6 +484,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LSUtilsDemo/LSUtilsDemo-PCH.pch";
 				INFOPLIST_FILE = LSUtilsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

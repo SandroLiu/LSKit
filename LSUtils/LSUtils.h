@@ -19,4 +19,5 @@
 #import "LSUtilsMacro.h"
 #import "LSHUDManager.h"
 #import "LSDeprecatedMacro.h"
+#import "LSSuppressWarningMacro.h"
 #endif /* LSKit_h */

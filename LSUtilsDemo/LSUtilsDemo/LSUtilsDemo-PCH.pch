@@ -1,0 +1,14 @@
+//
+//  LSUtilsDemo-PCH.pch
+//  LSUtilsDemo
+//
+//  Created by 刘帅 on 2019/1/4.
+//  Copyright © 2019年 刘帅. All rights reserved.
+//
+
+#ifndef LSUtilsDemo_PCH_pch
+#define LSUtilsDemo_PCH_pch
+
+#import <LSUtils.h>
+
+#endif /* LSUtilsDemo_PCH_pch */
