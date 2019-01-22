@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LSUtils"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "a self use utils"
   s.description  = %{
     LSUtils is a iOS utils for self use.
