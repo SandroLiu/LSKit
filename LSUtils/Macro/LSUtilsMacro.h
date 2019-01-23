@@ -20,7 +20,7 @@
 /// 主线程异步回调
 #define dispatch_main_async(block)\
 dispatch_async(dispatch_get_main_queue(), block);
-/// 后台串行队列
+/// 全局异步队列
 #define dispatch_background_async(block)\
 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
 /**
@@ -31,14 +31,6 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), bl
  void代表返回值没用，否则会报objc.keyPath没有使用
  */
 #define keyPath(objc, keyPath) @(((void)objc.keyPath, #keyPath))
-
-#define PerformSelectorLeakWarning(Stuff) \
-do { \
-_Pragma("clang diagnostic push") \
-_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
-Stuff; \
-_Pragma("clang diagnostic pop") \
-} while (0)
 
 //-------------------打印日志-------------------------
 //DEBUG  模式下打印日志,当前行
