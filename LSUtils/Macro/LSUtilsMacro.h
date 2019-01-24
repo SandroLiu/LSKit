@@ -9,9 +9,10 @@
 #ifndef LSUtilsMacro_h
 #define LSUtilsMacro_h
 
-//获取屏幕 宽度、高度
+//获取屏幕 宽度、高度、缩放系数
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define SCREEN_SCALE ([UIScreen mainScreen].scale)
 
 // block 强弱引用转换
 #define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o
@@ -67,5 +68,9 @@ fprintf(stderr, "====================================\n\n");                \
 #define KColorFromHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 //=======================颜色设置宏=====================
 
+//-----------------------字体设置------------------------
+#define kSystemFontSize(size) [UIFont systemFontOfSize:size]
+#define kBoldSystemFontSize(size) [UIFont boldSystemFontOfSize:size]
+//=======================字体设置========================
 
 #endif /* LSUtilsMacro_h */
