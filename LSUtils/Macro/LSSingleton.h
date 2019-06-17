@@ -11,7 +11,7 @@
 
 //由于宏定义里有需要替换的内容所以定义一个变量className
 //##用于分割、连接字符串
-#define singleton_interface(className) +(className *)shared##className;
+#define singleton_interface(className) +(className *_Nonnull)shared##className;
 
 #pragma mark 实现.m
 //\在代码中用于连接宏定义,以实现多行定义
