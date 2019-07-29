@@ -69,8 +69,10 @@ fprintf(stderr, "====================================\n\n");                \
 //=======================颜色设置宏=====================
 
 //-----------------------字体设置------------------------
-#define kSystemFontSize(size) [UIFont systemFontOfSize:size]
-#define kBoldSystemFontSize(size) [UIFont boldSystemFontOfSize:size]
+#define kSystemFontSize(size) [UIFont systemFontOfSize:(size)]
+#define kBoldSystemFontSize(size) [UIFont boldSystemFontOfSize:(size)]
+#define kMediumSystemFontSize(size) [UIFont systemFontOfSize:(size) weight:UIFontWeightMedium];
+
 //=======================字体设置========================
 
 #endif /* LSUtilsMacro_h */
