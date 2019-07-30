@@ -71,7 +71,7 @@ fprintf(stderr, "====================================\n\n");                \
 //-----------------------字体设置------------------------
 #define kSystemFontSize(size) [UIFont systemFontOfSize:(size)]
 #define kBoldSystemFontSize(size) [UIFont boldSystemFontOfSize:(size)]
-#define kMediumSystemFontSize(size) [UIFont systemFontOfSize:(size) weight:UIFontWeightMedium];
+#define kMediumSystemFontSize(size) [UIFont systemFontOfSize:(size) weight:UIFontWeightMedium]
 
 //=======================字体设置========================
 
